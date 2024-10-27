@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chayanit Kuntanarumitkul's Portfolio</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styles.css"> 
+        <link rel="stylesheet" href="css/skins/color-1.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    
+<body>
+    <div class="theme-switcher">
+        <p>welcome to my website! </p>
+        <h3>Choose a Theme</h3>
+        <div class="button-group">
+            <div class="theme-button" id="default-theme" style="background-color: white"></div>
+            <div class="theme-button" id="red-theme" style="background-color: #ffcccc;"></div>
+            <div class="theme-button" id="orange-theme" style="background-color: #ffebcc;"></div>
+            <div class="theme-button" id="green-theme" style="background-color: #ccffcc;"></div>
+            <div class="theme-button" id="blue-theme" style="background-color: #ccf2ff;"></div>
+            <div class="theme-button" id="pink-theme" style="background-color: #ffccf2;"></div>
+        </div>
+    </div>
+
+    <!-- Main Container Start -->
+    <div class="main-container">
+        <!-- Aside Start -->
+        <div class="aside">
+            <div class="logo"> 
+                <a href="#"><span>C</span>hicha </a>
+            </div>
+            
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#education"><i class="fa fa-school"></i> Education</a></li>
+                <li><a href="#skills"><i class="fa fa-list"></i> Skills</a></li>
+                <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+            </ul>
+        </div>
+        <!-- Aside End -->
+
+        <!-- Main Content Start -->
+        <div class="main-content">
+            <!-- Home Section Start -->
+            <section id="home" class="home section">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, my name is <span class="name">Chayanit Kuntanarumitkul</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing" id="typing-text"></span></h3>
+
+                            <script>
+                                document.addEventListener("DOMContentLoaded", () => {
+                                    const typingText = document.getElementById("typing-text");
+                                    const text = "computer engineering student";
+                                    let index = 0;
+                            
+                                    function type() {
+                                        if (index < text.length) {
+                                            typingText.innerHTML += text.charAt(index);
+                                            index++;
+                                            setTimeout(type, 150); 
+                                        } else {
+                                            setTimeout(clearTyping, 2000); 
+                                        }
+                                    }
+                            
+                                    function clearTyping() {
+                                        typingText.innerHTML = "";
+                                        index = 0;
+                                        setTimeout(type, 1000); 
+                                    }
+                            
+                                    type(); 
+                                    setInterval(clearTyping, 10000); 
+                                });
+                            </script>
+
+                            <p>Welcome to my portfolio! I'm a freshman at KMUTT, pursuing a degree in Computer Engineering. With a passion for programming and technology, I love exploring new ideas and creating innovative solutions.
+                                Here, you'll find my projects, skills, and a bit about my journey. I'm excited to share my work and connect with fellow tech enthusiasts. Thanks for stopping by!</p>
+                            <a href="#about" class="btn">Learn More About Me</a>
+                        </div>
+                        <div class="home-img">
+                            <img src="images/face.jpg" alt="Chayanit Kuntanarumitkul">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home Section End -->
+
+         <!-- About Section Start -->
+         <section id="about" class="about section">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-content padd-15">
+                        <div class="about-text padd-15">
+                            <h3>I'm Chayanit Kuntanarumitkul, a dedicated <span>Computer Engineering Student</span></h3>
+                            <p>Hello! I'm Chayanit Kuntanarumitkul, often known as Chicha. I am a 17 year old freshman at King Mongkut University of Technology Thonburi in Bangkok, Thailand, where I'm pursuing a degree in Computer Engineering. My journey into the world of technology began during last year of middle school, where I developed a fascination for programming. This interest has driven me to explore various facets of computer science, and I am eager to deepen my understanding in this field. </p>
+
+                                <p>In addition to my academic pursuits, I have a passion for reading and watching films. These hobbies not only provide me with enjoyment but also inspire my creativity and critical thinking. I believe that storytelling, whether through literature or cinema, enhances my ability to approach problems with a unique perspective. This blend of technology and creativity is something I aim to harness in my future projects.</p>
+                                
+                               <p> As I embark on this academic journey, I am excited about the opportunities that lie ahead. My goal is to develop software solutions that address real world challenges and improve people's lives. I look forward to connecting with fellow tech enthusiasts and learning from their experiences, as I believe collaboration is key to innovation and growth in this evolving field. </p>
+                        </div>
+                        <div class="personal-info padd-15">
+                            <h3>Personal Information</h3>
+                            <div class="info-item padd-15">
+                                <p><strong>Birthday:</strong> <span>26 January 2007</span></p>
+                                <p><strong>Age:</strong> <span>17</span></p>
+                                <p><strong>City:</strong> <span>Bangkok, Thailand</span></p>
+                                <p><strong>Hobby:</strong> <span>reading novel, watching movie</span></p>
+                                <p><strong>Favorite Quote:</strong> <span>"happy mind, happy life"</span></p>
+                            </div>
+                            <a href="#contact" class="btn">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="student-img padd-15">
+                        <img src="images/student.jpg" alt="Chayanit Kuntanarumitkul" class="rounded-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+<!-- About Section End -->
+
+
+
+
+
+            <!-- Education Section Start -->
+            <section id="education" class="education padd-15">
+                <div class="section-title padd-15">
+                    <h2>Education</h2>
+                </div>
+                <div class="timeline-box padd-15">
+                    <div class="timeline shadow-dark">
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2010-2019</h3>
+                            <h4 class="timeline-title">Primary School</h4>
+                            <p class="timeline-text">Wansawangchit School</p>
+                            <p>Developed foundational skills in literacy and mathematics while participating in various extracurricular activities.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2019-2022</h3>
+                            <h4 class="timeline-title">Middle School</h4>
+                            <p class="timeline-text">Roongaroon School</p>
+                            <p>Explored subjects like science and technology, which sparked my interest in computer engineering.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2022-2023</h3>
+                            <h4 class="timeline-title">High School</h4>
+                            <p class="timeline-text">Suankularb Wittayalai Thonburi</p>
+                            <p>Completed one year before taking the GED exam, enhancing my analytical and problem-solving skills.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2024-Present</h3>
+                            <h4 class="timeline-title">Computer Engineering Program</h4>
+                            <p class="timeline-text">King Mongkut University of Technology Thonburi</p>
+                            <p>Currently focusing on software development and engaging in practical projects that combine theoretical knowledge with real-world applications.</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <h3 class="experience-title">Here's my experiences in joining school activities</h3>
+                    
+  
+                    <!-- Move images under the timeline -->
+                    <div class="education-images">
+                        <img src="images/primary.jpg" alt="Primary School">
+                        <img src="images/middle.jpg" alt="Middle School">
+                        <img src="images/high.jpg" alt="High School">
+                        <img src="images/activity1.jpg" alt="Primary School">
+                        <img src="images/activity2.jpg" alt="Middle School">
+                        
+                    </div>
+                    <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                            <div class="timeline-item">
+                               
+                                <h3 class="timeline-date"><i class="fa fa-calendar"></i> SMARTBRAIN</h3>
+                                <h4 class="timeline-title">mental arithmetic competitions </h4>
+                                <p class="timeline-text">level 1,2,3,10</p>
+                                <p>2 trophies, 5 gold medals, 2 silvers. Engaging in these activities enhances my cognitive abilities, including memory, concentration, logical reasoning, and creativity.</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="timeline-box padd-15">
+                            <div class="timeline shadow-dark">
+                                <div class="timeline-item">
+                                   
+                                    <h3 class="timeline-date"><i class="fa fa-calendar"></i> STEAM </h3>
+                                    <h4 class="timeline-title">SKTIP innovative project competition</h4>
+                                    <p class="timeline-text">2023</p>
+                                    <p>second place, Additionally, they foster teamwork and cultivate a more interactive learning environment beyond the traditional classroom setting. </p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <div class="timeline-item">
+                                       
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> THE ELECTRIC PLAYGROUND </h3>
+                                        <h4 class="timeline-title">innovative project competition </h4>
+                                        <p class="timeline-text">2021</p>
+                                        <p> participated, in the 150 teams left. These experiences not only allow me to collaborate with diverse individuals but also sharpen my innovative thinking and problem-solving skills.  </p>
+                                    </div>
+                                    </div>
+                                </div>
+                   
+                </div>
+            </section>
+            <!-- Education Section End -->
+
+          <!-- Skills Section Start -->
+          <section id="skills" class="skills section padd-15">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Skills</h2>
+                        <p>Here are some of my core skills:</p>
+                    </div>
+                </div>
+        <div class="row justify-content-center padd-15">
+            <!-- Programming Skills -->
+            <div class="skills-category padd-15">
+                <h4>Programming Skills</h4>
+                <div class="skill-item">
+                    <h5>C Programming</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 60%;"></div>
+                        <div class="skill-percent">60%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h5>Python</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 50%;"></div>
+                        <div class="skill-percent">50%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h5>HTML & CSS</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 30%;"></div>
+                        <div class="skill-percent">30%</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Design Skills -->
+            <div class="skills-category padd-15">
+                <h4>Design Skills</h4>
+                <div class="skill-item">
+                    <h5>UI/UX Design</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 70%;"></div>
+                        <div class="skill-percent">70%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h5>Digital Art</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 65%;"></div>
+                        <div class="skill-percent">65%</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Analytical Skills -->
+            <div class="skills-category padd-15">
+                <h4>Analytical Skills</h4>
+                <div class="skill-item">
+                    <h5>Calculus</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 60%;"></div>
+                        <div class="skill-percent">60%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h5>Discrete Math</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 50%;"></div>
+                        <div class="skill-percent">50%</div>
+                    </div>
+                </div>
+            </div>
+             <!-- language Skills -->
+             <div class="skills-category padd-15">
+                <h4>Communication Skills</h4>
+                <div class="skill-item">
+                    <h5>Thai</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 90%;"></div>
+                        <div class="skill-percent">90%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h5>English</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 80%;"></div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h5>Italy</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 30%;"></div>
+                        <div class="skill-percent">30%</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Soft Skills -->
+            <div class="skills-category padd-15">
+                <h4>Soft Skills</h4>
+                <div class="skill-item">
+                    <h5>Teamwork</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 75%;"></div>
+                        <div class="skill-percent">75%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h5>Communication</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 70%;"></div>
+                        <div class="skill-percent">70%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h5>Problem Solving</h5>
+                    <div class="progress">
+                        <div class="progress-in" style="width: 65%;"></div>
+                        <div class="skill-percent">65%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team-img text-center">
+            <img src="images/team.jpg" alt="Chayanit with Team" class="team-img-small">
+            <img src="images/team2.jpg" alt="Chayanit with Team" class="team-img-small">
+            <img src="images/team3.jpg" alt="Chayanit with Team" class="team-img-small">
+        </div>
+    </div>
+</section>
+<!-- Skills Section End -->
+
+
+
+            <!-- Contact Section Start -->
+            <section id="contact" class="contact section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                            <p>If you have any questions or would like to get in touch, feel free to reach out!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="contact-info padd-15">
+                            <p><strong>Email:</strong> <span>chayanit.kunt@mail.kmutt.ac.th</span></p>
+                            <p><strong>Phone:</strong> <span>099 197 9119</span></p>
+                            <p><strong>Instagram:</strong> <span>chippiescaspier</span></p>
+                            <p><strong>Address:</strong> <span>7/21 Rama 2, Tha Kham, Bang Khun Thian, Bangkok 10150, Thailand</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ig-img">
+                    <img src="images/ig.jpg" alt="Instagram Profile">
+                </div>
+            </section>
+            <!-- Contact Section End -->
+
+        </div>
+        <!-- Main Content End -->
+        <footer class="footer">
+            <p>© 2024 Chayanit. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <!-- Main Container End -->
+
+<!-- JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
